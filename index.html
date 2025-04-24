@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="appContainer">
+        <div id="searchContainer">
+            <input type="text" id="cityInput" placeholder="Enter city">
+            <button onclick="getWeather()">Get Weather</button>
+            <button id="unitToggle" onclick="toggleUnit()">Switch to Fahrenheit</button>
+        </div>
+        
+        <div id="weatherInfo">
+            <h1 id="cityName">Weather</h1>
+            <div id="weatherDetails">
+                <!-- Default weather icon -->
+                <img id="weatherIcon" src="https://th.bing.com/th/id/R.770b805d5c99c7931366c2e84e88f251?rik=khgO%2bY1Hh3BT9w&riu=http%3a%2f%2fpurepng.com%2fpublic%2fuploads%2flarge%2fpurepng.com-weather-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596142qx4ep.png&ehk=6msbAydV7X6D4bO8zvLC664aXwKOdBU17dwrHcKxaAg%3d&risl=&pid=ImgRaw&r=0" alt="weather icon">
+                <p id="temperature">--°C</p>
+                <p id="description">--</p>
+            </div>
+            <button onclick="shareWeather()">Share Weather</button>
+        </div>
+        
+        <div id="historyContainer">
+            <h2>Search History</h2>
+            <ul id="historyList"></ul>
+        </div>
+        
+        <div id="forecastContainer">
+            <h2>7-Day Forecast</h2>
+            <div id="forecast"></div>
+        </div>
+        
+        <div>
+            <button onclick="toggleMode()">Toggle Dark/Light Mode</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

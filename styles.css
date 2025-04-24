@@ -1,0 +1,280 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Container for the whole app */
+#appContainer {
+    width: 100%;
+    max-width: 900px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Search Container */
+#searchContainer {
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    padding: 12px 20px;
+    width: 250px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    font-size: 1rem;
+    margin-right: 15px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #009688;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00796b;
+}
+
+/* Weather Info */
+#weatherInfo {
+    margin: 30px 0;
+}
+
+#weatherDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#weatherIcon {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+#temperature {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+
+#description {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Forecast Container */
+#forecastContainer {
+    margin-top: 40px;
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#forecast div {
+    text-align: center;
+}
+
+#forecast img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* History Container */
+#historyContainer {
+    margin-top: 30px;
+}
+
+#historyList {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#historyList li {
+    cursor: pointer;
+    color: #009688;
+    font-size: 1.1em;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+#historyList li:hover {
+    color: #00796b;
+}
+
+/* Dark/Light Mode */
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.light {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Button for Dark/Light Mode */
+button#modeToggle {
+    padding: 12px 20px;
+    background-color: #008080;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button#modeToggle:hover {
+    background-color: #00675b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #weatherDetails {
+        flex-direction: column;
+    }
+
+    #weatherIcon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #forecast {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#appContainer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+#searchContainer {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#weatherInfo {
+    margin: 20px 0;
+}
+
+#weatherDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#weatherIcon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#temperature {
+    font-size: 2em;
+}
+
+#forecastContainer {
+    margin-top: 20px;
+}
+
+#historyContainer {
+    margin-top: 20px;
+}
+
+#historyList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#historyList li {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.light {
+    background-color: #fff;
+    color: #333;
+} */
